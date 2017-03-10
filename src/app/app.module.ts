@@ -15,9 +15,10 @@ import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
 import { HeroSearchComponent }  from './hero-search.component';
+//Error handler directive
+import { ErrorHandlerDirective } from './errorhandler.directive';
 
-
-//Error handler
+//Error handler Module
 import {CustomErrorHandler} from "./error.module";
 import {CustomErrorHandlerModule } from "./error.module";
 
@@ -35,7 +36,8 @@ import {CustomErrorHandlerModule } from "./error.module";
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    ErrorHandlerDirective
   ],
   providers: [ HeroService, CustomErrorHandler ],
   bootstrap: [ AppComponent ]
